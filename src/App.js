@@ -1,14 +1,14 @@
 import React from 'react';
 
-import MainActivities from "./components/Homepage-MainActivities";
+import Homepage from "./components/Homepage";
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <MainActivities />
-    </div>
+      <Homepage />
+    </div >
   );
 }
 
