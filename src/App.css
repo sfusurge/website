@@ -1,8 +1,21 @@
 :root{
+  --fontSize-desktop-heading: 64px;
+  --fontSize-desktop-subHeading: 50px;
+  --fontSize-desktop-subSubHeading: 30px;
+  --fontSize-desktop-body: 20px;
+
+  --fontSize-mobile-heading: 30px;
+  --fontSize-mobile-subHeading: 20px;
+  --fontSize-mobile-body: 16px;
+
   --color-main: #1C307A;
   --color-img: #7CA6EE;
   --color-accent: #B2CBF5;
-  --color-btn-primary: #568CDB;
-  --color-btn-secondary: #6D97D5;
+  --color-btnPrimary: #568CDB;
+  --color-btnSecondary: #6D97D5;
   --color-background: #F6F6F6;
+}
+
+#app{
+  font-family: "Barlow";
 }
