@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "../css/Homepage-Activity.module.css";
+import styles from "../css/Activity.module.css";
 
 export default props => {
   return (
