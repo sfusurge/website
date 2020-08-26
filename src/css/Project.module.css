@@ -1,0 +1,19 @@
+.container{
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  
+}
+
+.image{
+  margin: auto;
+}
+
+.name{
+  font-size: var(--fontSize-monile-subHeading);
+}
+
+.description{
+  font-size: var(--fontSize-monile-body);
+}
