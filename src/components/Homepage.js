@@ -24,7 +24,7 @@ export default props => {
         msg="We aim to give all students interested in tech the 
         ability to learn, by bringing in senior tech students and 
         industry professionals to teach hands-on workshops."
-        imageID="robot"
+        imagePos={{ transform: "translateY(-100%)", width: "80%" }}
         image={robot}
         altText="Blue Robot"
       />
