@@ -1,9 +1,9 @@
 #container {
   margin: auto;
-  background-color: #568CDB;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-btnPrimary);
   font-family: var(--color-main);
   font-weight: 550;
   color: #FFFFFF;
