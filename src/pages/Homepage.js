@@ -1,6 +1,6 @@
 import React from "react";
 
-import Activity from "./Activity";
+import Activity from "../components/Activity";
 
 import scooter from "../assets/scooter.svg";
 import robot from "../assets/robot.svg"
