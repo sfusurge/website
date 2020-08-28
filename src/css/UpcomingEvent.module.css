@@ -1,0 +1,36 @@
+#container {
+  width: 82%;
+}
+
+.frame {
+  height: 10%;
+}
+
+.title {
+  display: flex;
+  transform: translate(7%, -225%);
+  color: #ffffff;
+}
+
+.title h1 {
+  width: 60%;
+  font-size: 30px;
+  font-weight: 800;
+  margin-right: 10%;
+  margin-left: 15%;
+}
+
+.date {
+  width: 18%;
+  text-align: center;
+  margin-left: 1%;
+}
+
+.date h1, .date h2 {
+  font-weight: 600;
+}
+
+.date h2 {
+  font-size: 20px;
+  margin-top: -15px;
+}

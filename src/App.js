@@ -1,13 +1,17 @@
 import React from 'react';
 
-import Homepage from "./components/Homepage";
+import UpcomingEvent from "./components/UpcomingEvent";
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Homepage />
+    <div id="app">
+      <UpcomingEvent
+        title="Linux Workshop"
+        date="22"
+        month="NOV"
+      />
     </div >
   );
 }
