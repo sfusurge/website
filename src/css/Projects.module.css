@@ -1,0 +1,16 @@
+#pacmacroImage{
+  transform: translate(0, -55px);
+  float: right;
+  margin-right: 7%;
+}
+
+#pacmacroText{
+  transform: translate(0, -55px);
+}
+
+#pacmacroContainer{
+  background-image: url("../assets/projects/pac-macro-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
