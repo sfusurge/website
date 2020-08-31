@@ -1,23 +1,19 @@
 #container {
   width: 82%;
+  margin: auto;
 }
 
 .frame {
   height: 10%;
 }
 
-.title {
+.header {
   display: flex;
-  transform: translate(7%, -225%);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-275px);
   color: #ffffff;
-}
-
-.title h1 {
-  width: 60%;
-  font-size: 30px;
-  font-weight: 800;
-  margin-right: 10%;
-  margin-left: 15%;
 }
 
 .date {
@@ -33,4 +29,29 @@
 .date h2 {
   font-size: 20px;
   margin-top: -15px;
+}
+
+.divider{
+  background: white center;
+  width: 2px;
+  height: 64px;
+}
+
+.title {
+  width: 60%;
+  font-size: 30px;
+  font-weight: 800;
+  /* margin-right: 10%; */
+  /* margin-left: 15%; */
+}
+
+.backgroundBody {
+  width: calc(100% - 47px);
+  height: 275px;
+}
+
+.backgroundEdge {
+  transform: translateX(-1px);
+  width: 47px;
+  height: 275px;
 }

@@ -1,19 +1,24 @@
-import React from "react";
+import React from "react"
 
-import styles from "../css/UpcomingEvent.module.css";
+import styles from "../css/UpcomingEvent.module.css"
 
-import { ReactComponent as Frame } from "../assets/event-frame.svg";
+import backgroundBodySrc from "../assets/event-card-body.svg"
+import backgroundEdgeSrc from "../assets/event-card-edge.svg"
 
 export default props => {
   return (
     <div id={styles.container}>
-      <Frame className={styles.frame} alt="" />
-      <div className={styles.title}>
+      <div className={styles.background}>
+        <img src={backgroundBodySrc} className={styles.backgroundBody} alt="" />
+        <img src={backgroundEdgeSrc} className={styles.backgroundEdge} alt="" />
+      </div>
+      <div className={styles.header}>
         <div className={styles.date}>
           <h1>{props.date}</h1>
           <h2>{props.month}</h2>
         </div>
-        <h1>{props.title}</h1>
+        <span className={styles.divider} />
+        <h1 className={styles.title}>{props.title}</h1>
       </div>
     </div>
   )
