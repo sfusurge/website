@@ -4,6 +4,8 @@ import styles from "../css/UpcomingEvent.module.css"
 
 import backgroundBodySrc from "../assets/event-card-body.svg"
 import backgroundEdgeSrc from "../assets/event-card-edge.svg"
+import mapMarker from "../icons/map-marker.svg"
+import clock from "../icons/time.svg"
 
 export default props => {
   return (
@@ -19,6 +21,17 @@ export default props => {
         </div>
         <span className={styles.divider} />
         <h1 className={styles.title}>{props.title}</h1>
+      </div>
+      <div className={styles.body}>
+        <div className={styles.details}>
+          <img src={mapMarker} alt="" />
+          <p>{props.location}</p>
+        </div>
+        <div className={styles.details}>
+          <img src={clock} alt="" />
+          <p>{props.time}</p>
+        </div>
+        <a className={styles.fbEvent} href={props.link}>{props.title}</a>
       </div>
     </div>
   )
