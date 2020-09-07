@@ -11,6 +11,8 @@ function App() {
         title="Linux Workshop"
         date="22"
         month="NOV"
+        location="SFU Surge Discord Server"
+        time="6:00 PM - 7:00 PM"
       />
     </div >
   );
