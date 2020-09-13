@@ -11,7 +11,7 @@ function App() {
         title="Linux Workshop"
         date="22"
         month="NOV"
-        location={{ link: "googl.ca", title: "Online" }}
+        location={{ link: "googl.ca", title: "SFU Surge Discord Server" }}
         time="everytime"
       />
     </div >
