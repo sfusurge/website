@@ -1,13 +1,15 @@
-import React from 'react';
+import React from 'react'
+
+import Homepage from "./components/Homepage"
+import Button from "./components/Button"
 
 import './App.css';
 
-import SpotifyButton from "./components/SpotifyButton"
 
 function App() {
   return (
     <div className="App">
-      <SpotifyButton />
+      <Button />
     </div>
   );
 }
