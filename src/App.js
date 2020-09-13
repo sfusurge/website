@@ -11,6 +11,8 @@ function App() {
         title="Linux Workshop"
         date="22"
         month="NOV"
+        location={{ link: "googl.ca", title: "Online" }}
+        time="everytime"
       />
     </div >
   );

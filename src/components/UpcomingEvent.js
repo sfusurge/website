@@ -24,11 +24,11 @@ export default props => {
       </div>
       <div className={styles.body}>
         <div className={styles.details}>
-          <img src={mapMarker} alt="" />
-          <p>{props.location}</p>
+          <img src={mapMarker} alt="Location" />
+          <a href={props.location.link}>{props.location.title}</a>
         </div>
         <div className={styles.details}>
-          <img src={clock} alt="" />
+          <img src={clock} alt="Time" />
           <p>{props.time}</p>
         </div>
         <a className={styles.fbEvent} href={props.link}>{props.title}</a>
