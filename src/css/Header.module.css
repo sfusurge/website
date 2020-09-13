@@ -1,0 +1,33 @@
+.container {
+  background-image: url(../assets/frontpage-background.svg);
+  background-size: cover;
+  height: 475px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin-top: 50px;
+}
+
+.headerText {
+  color: var(--color-main);
+  justify-content: center;
+  text-align: center;
+}
+
+.mandate {
+  font-size: var(--fontSize-mobile-subHeading);
+  font-size: 20px;
+}
+
+.mission {
+  width: 75%;
+  margin: auto;
+  text-align: left;
+  font-size: 16px;
+}
+
+.rocketMonitor {
+  margin-top: 20px;
+}
