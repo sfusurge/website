@@ -1,9 +1,0 @@
-<svg width="307" height="275" viewBox="0 0 307 275" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="260" height="7.09677" fill="#2B5699"/>
-  <rect y="7" width="260" height="268" fill="#3D73C7"/>
-  <svg width="307" height="275" viewBox="0 0 307 275" fill="none" preserveAspectRatio="xMinYMin" xmlns="http://www.w3.org/2000/svg">
-    <path d="M260 7H306L306.5 241L260 275V7Z" fill="#3D73C7"/>
-    <path d="M306.452 241L260 275C261.993 266.118 262.506 261.361 260 250.355C278.82 250.943 288.901 248.339 306.452 241Z" fill="#2B5699"/>
-    <rect x="260" width="46" height="7" fill="#2B5699"/>
-  </svg>
-</svg>
