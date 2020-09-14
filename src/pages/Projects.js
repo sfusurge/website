@@ -31,7 +31,6 @@ export default props => {
   let [countDown, changeCountDown] = useState(applicationDeadline())
 
   useEffect(() => {
-    console.log("TesT")
     const timer = setTimeout(() => {
       changeCountDown(applicationDeadline())
     }, 1000)
@@ -50,7 +49,7 @@ export default props => {
         <>
           <p id={styles.timer}>{countDown.days}:{countDown.hours}:{countDown.minutes}:{countDown.seconds}</p>
           <Button
-            href=""
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeGaoSn4LC8-1V14ch-OV5bw-ltes-V-zbqnuJjLQoLb9ZUhA/viewform"
             text="Apply Now"
             style={{ marginBottom: "60px", width: "67%" }}
           />
