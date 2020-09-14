@@ -1,20 +1,24 @@
-import React from 'react';
+import React from 'react'
 
-import UpcomingEvent from "./components/UpcomingEvent";
+import Homepage from "./pages/Homepage"
+import Button from "./components/Button"
 
 import './App.css';
 
+import spotify from "./icons/spotify-icon.svg"
+
 function App() {
   return (
-    <div id="app">
-      <UpcomingEvent
-        title="Linux Workshop"
-        date="22"
-        month="NOV"
-        location={{ link: "googl.ca", title: "SFU Surge Discord Server" }}
-        time="everytime"
+    <div className="App">
+      <Homepage />
+      <Button
+        image={spotify}
+        altText="Link to Spotify"
+        text="Listen on Spotify"
+        link="https://open.spotify.com/show/5GAuw7brERfbZSfnKpURvE?si=f1Uz9jp4T0O9yD1MBqD7Eg"
+        style={{ width: "75%", height: "52px" }}
       />
-    </div >
+    </div>
   );
 }
 
