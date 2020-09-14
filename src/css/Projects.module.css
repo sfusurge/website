@@ -1,16 +1,38 @@
 #pacmacroImage{
-  transform: translate(0, -55px);
+  transform: translateY(-55px);
   float: right;
   margin-right: 7%;
 }
 
 #pacmacroText{
-  transform: translate(0, -55px);
+  transform: translateY(-45px);
+  width: 217px;
 }
 
 #pacmacroContainer{
   background-image: url("../assets/projects/pac-macro-background.png");
-  background-position: center;
+  background-position: 25% 0;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 432px;
+}
+
+#scheduleMeImage{
+  transform: translateY(-90px);
+  width: 262px;
+  float: right;
+  margin-right: 6%;
+}
+
+#scheduleMeText{
+  transform: translateY(-10px);
+  width: 244px;
+}
+
+#scheduleMeContainer{
+  background-image: url("../assets/projects/schedule-me-background.png");
+  background-position: 78% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 364px;
 }
