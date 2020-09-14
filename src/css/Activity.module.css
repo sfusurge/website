@@ -1,0 +1,29 @@
+#container {
+  position: relative;
+  margin-left: 12%;
+  margin-bottom: 250px;
+}
+
+.squareBackground {
+  width: 75%;
+  height: calc(65vw);
+  background-color: var(--color-img);
+}
+
+.image {
+  width: 70%;
+  float: right;
+  margin-right: 15%;
+  transform: translateY(-105%);
+}
+
+.text {
+  position: absolute;
+  width: 85%;
+  text-align: left;
+  color: var(--color-main);
+}
+
+#textTitle {
+  font-weight: bold;
+}
