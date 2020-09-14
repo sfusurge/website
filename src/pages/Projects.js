@@ -46,12 +46,17 @@ export default props => {
         <p>We open applications for <b>Project Team Members, Team Leads,</b> and <b>Mentors</b> every semester.</p>
         <p>Currently, Projects applications are <b>{countDown ? "OPEN" : "CLOSED"}</b></p>
       </div>
-      {countDown && <p id={styles.timer}>{countDown.days}:{countDown.hours}:{countDown.minutes}:{countDown.seconds}</p>}
-      <Button
-        href=""
-        text="Apply Now"
-        style={{ marginBottom: "60px", width: "67%" }}
-      />
+      {countDown &&
+        <>
+          <p id={styles.timer}>{countDown.days}:{countDown.hours}:{countDown.minutes}:{countDown.seconds}</p>
+          <Button
+            href=""
+            text="Apply Now"
+            style={{ marginBottom: "60px", width: "67%" }}
+          />
+        </>
+      }
+
       <h1 id={styles.pastProjects}>Past Projects</h1>
 
       <Project
