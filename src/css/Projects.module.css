@@ -1,3 +1,35 @@
+#splash{
+  width: 100%;
+}
+
+#description{
+  width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  color: var(--color-main);
+  font-size: var(--fontSize-mobile-body);
+}
+
+#description p b{
+  font-weight: 600;
+}
+
+#timer{
+  color: var(--color-main);
+  margin: 0 auto 24px auto;
+  font-size: 36px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+#pastProjects{
+  color: var(--color-main);
+  margin: 0 auto 110px auto;
+  width: fit-content;
+  font-weight: 600;
+}
+
 #pacmacroImage{
   transform: translateY(-55px);
   float: right;
