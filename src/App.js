@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import Homepage from "./pages/Homepage"
 import Button from "./components/Button"
+import Nav from "./components/Nav"
 
 import './App.css';
 
