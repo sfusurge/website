@@ -2,6 +2,7 @@ import React from 'react'
 
 import Homepage from "./pages/Homepage"
 import Button from "./components/Button"
+import Footer from "./components/Footer"
 
 import './App.css';
 
