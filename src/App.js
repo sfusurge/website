@@ -27,7 +27,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <Homepage />
       <Button
         image={spotify}
         altText="Link to Spotify"
