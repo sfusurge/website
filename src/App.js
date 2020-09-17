@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Homepage from "./pages/Homepage"
 import Button from "./components/Button"
@@ -8,6 +8,8 @@ import './App.css';
 import spotify from "./icons/spotify-icon.svg"
 
 function App() {
+  const [scroll, scrollLock] = useState(true)
+
   return (
     <div className="App">
       <Homepage />
