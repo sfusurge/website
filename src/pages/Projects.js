@@ -56,7 +56,7 @@ export default props => {
         </>
       }
 
-      <h1 id={styles.pastProjects}>Past Projects</h1>
+      <h1 id={styles.pastProjects} style={{ paddingTop: countDown ? 0 : "50px" }}>Past Projects</h1>
 
       <Project
         image={scheduleMe}
