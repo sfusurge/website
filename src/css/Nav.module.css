@@ -1,0 +1,88 @@
+#nav{
+  position: relative;
+}
+
+#openBtn {
+  position: absolute;
+  right: 5%;
+  top: 22px;
+}
+
+#openImg {
+  width: 18px;
+  height: 21px;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  float: right;
+  background-color: white;
+  height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+  transition: transform 300ms ease-out;
+}
+
+#container > * {
+  margin-left: 6%;
+}
+
+#header{
+  width: 86%;
+  margin-top: 15px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#logo{
+  height: 35px;
+}
+
+.btn{
+  border: none;
+  padding: 0 10px;
+  margin: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#closeBtn:focus{
+  outline: none;
+}
+
+#closeImg{
+  width: 17px;
+}
+
+.routes{
+  text-decoration: none;
+  color: var(--color-main);
+  margin: 16px 0;
+  font-weight: 600;
+  font-size: var(--fontSize-mobile-subHeading);
+}
+
+#footer{
+  position: absolute;
+  bottom: 23px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.iconLink{
+  margin: 0 6px;
+  height: fit-content;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.icon{
+  width: 35px;
+}
+
