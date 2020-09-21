@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 import Homepage from "./pages/Homepage"
 import Button from "./components/Button"
+import Footer from "./components/Footer"
 
 import './App.css';
 
