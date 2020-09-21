@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Homepage from "./pages/Homepage"
+import About from './pages/About'
 import Button from "./components/Button"
 
 import './App.css';
@@ -10,7 +11,8 @@ import spotify from "./icons/spotify-icon.svg"
 function App() {
   return (
     <div className="App">
-      <Homepage />
+      <About />
+      {/* <Homepage /> */}
       <Button
         image={spotify}
         altText="Link to Spotify"

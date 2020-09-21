@@ -1,0 +1,54 @@
+.text, .header, #contact {
+  color: var(--color-main);
+  width: 83%;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: var(--fontSize-mobile-body);
+}
+
+.text b {
+  font-weight: 600;
+}
+
+.header {
+  font-size: var(--fontSize-mobile-heading);
+  font-weight: 600;
+  margin-top: 48px;
+  margin-bottom: 6px;
+}
+
+#contact {
+  font-size: var(--fontSize-mobile-subHeading);
+  margin-top: 48px;
+  line-height: 30px;
+}
+
+#contact a {
+  color: var(--color-main);
+  font-family: "Barlow";
+  font-size: var(--fontSize-mobile-subHeading);
+}
+
+#photoGrid, #colab{
+  width: 80%;
+}
+
+#photoGrid {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between ;
+}
+
+.exec{
+  margin-top: 15px;
+  width: 30%;
+}
+
+#colab{
+  color: var(--color-main);
+  margin: 33px auto 35px auto;
+}
