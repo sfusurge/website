@@ -18,4 +18,6 @@
 
 #app{
   font-family: "Barlow";
+  background-color: var(--color-background);
+  overflow-x: hidden;
 }

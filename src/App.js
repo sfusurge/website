@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 import Homepage from "./pages/Homepage"
 import Button from "./components/Button"
+import Nav from "./components/Nav"
 import Footer from "./components/Footer"
 
 import './App.css';
@@ -10,6 +11,8 @@ import './App.css';
 import spotify from "./icons/spotify-icon.svg"
 
 function App() {
+  const [scroll, scrollLock] = useState(true)
+
   return (
     <div className="App">
       <Router>
