@@ -21,7 +21,7 @@ export default props => {
       </p>
 
       <h1 className={styles.header}>Our Story</h1>
-      <p className={styles.text}>
+      <p className={styles.text} id={styles.story}>
         SFU Surge is an all-inclusive organization to promote <b>curiosity and excitement for a future in technology,</b> while guiding students on their paths to <b>career success.</b> An innovative community which empowers students to gain access to readily available networking, and connect their shared experiences with designers, engineers, programmers and developers alike.
       </p>
 

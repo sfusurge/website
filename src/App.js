@@ -10,7 +10,7 @@ import spotify from "./icons/spotify-icon.svg"
 
 function App() {
   return (
-    <div className="App">
+    <div id="app">
       <About />
       {/* <Homepage /> */}
       <Button

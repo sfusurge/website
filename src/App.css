@@ -18,4 +18,5 @@
 
 #app{
   font-family: "Barlow";
+  background-color: var(--color-background);
 }

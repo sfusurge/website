@@ -12,6 +12,10 @@
   font-weight: 600;
 }
 
+#story {
+  line-height: 24px;
+}
+
 .header {
   font-size: var(--fontSize-mobile-heading);
   font-weight: 600;
@@ -27,8 +31,6 @@
 
 #contact a {
   color: var(--color-main);
-  font-family: "Barlow";
-  font-size: var(--fontSize-mobile-subHeading);
 }
 
 #photoGrid, #colab{
