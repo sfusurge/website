@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 import Homepage from "./pages/Homepage"
+import About from './pages/About'
 import Button from "./components/Button"
 import Nav from "./components/Nav"
 import Footer from "./components/Footer"
@@ -14,7 +15,7 @@ function App() {
   const [scroll, scrollLock] = useState(true)
 
   return (
-    <div className="App">
+    <div id="app">
       <Router>
         <Switch>
           {/* <Route path="/projects">
@@ -23,9 +24,9 @@ function App() {
           {/* <Route path="/events">
             <Events />
           </Route> */}
-          {/* <Route path="/about">
+          <Route path="/about">
             <About />
-          </Route> */}
+          </Route>
           <Route path="/">
             <Homepage />
           </Route>
