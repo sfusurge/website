@@ -1,0 +1,15 @@
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-btnPrimary);
+  font-family: var(--color-main);
+  font-weight: 600;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.element {
+  margin: 10px;
+}

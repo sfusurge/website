@@ -1,20 +1,19 @@
 #container {
-  position: relative;
-  margin-left: 12%;
-  margin-bottom: 250px;
+  display: relative;
 }
 
 .squareBackground {
-  width: 75%;
+  width: 90%;
   height: calc(65vw);
   background-color: var(--color-img);
 }
 
-img {
+.image {
+  display: absolute;
+  top: 10px;
+  left: 50px;
   width: 70%;
-  float: right;
-  margin-right: 15%;
-  transform: translateY(-105%)
+  /* transform: translate(20%, -105%); */
 }
 
 .text {
