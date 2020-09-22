@@ -5,25 +5,22 @@ import Button from "../components/Button"
 
 import styles from "../css/Projects.module.css"
 
+import projectsSplash from "../assets/projects/projects-splash.svg"
 import pacmacro from "../assets/projects/pac-macro.png"
 import scheduleMe from "../assets/projects/schedule-me.png"
-import projectsSplash from "../assets/projects/projects-splash.svg"
+import buildABot from "../assets/projects/build-a-bot.png"
+import mealMovers from "../assets/projects/meal-movers.png"
+import stormArea52 from "../assets/projects/storm-area-52.png"
+import sfuCarpool from "../assets/projects/sfu-carpool.png"
 
 const applicationDeadline = () => {
-  let time = new Date("2020-09-14T23:59:59") - Date.now()
+  let time = new Date("2020-09-24T23:59:59") - Date.now()
   if (time <= 0) return null;
-
-  let delta = {
-    days: Math.floor(time / (1000 * 60 * 60 * 24)),
-    hours: Math.floor((time / (1000 * 60 * 60)) % 24),
-    minutes: Math.floor((time / 1000 / 60) % 60),
-    seconds: Math.floor((time / 1000) % 60)
-  }
   return {
-    days: delta.days >= 10 ? delta.days : '0'.concat(delta.days),
-    hours: delta.hours >= 10 ? delta.hours : '0'.concat(delta.hours),
-    minutes: delta.minutes >= 10 ? delta.minutes : '0'.concat(delta.minutes),
-    seconds: delta.seconds >= 10 ? delta.seconds : '0'.concat(delta.seconds)
+    days: String(Math.floor(time / (1000 * 60 * 60 * 24))).padStart(2, "0"),
+    hours: String(Math.floor((time / (1000 * 60 * 60)) % 24)).padStart(2, "0"),
+    minutes: String(Math.floor((time / 1000 / 60) % 60)).padStart(2, "0"),
+    seconds: String(Math.floor((time / 1000) % 60)).padStart(2, "0")
   }
 }
 
@@ -78,6 +75,54 @@ export default props => {
         }}
         projectName="Pac Macro"
         description={["Players track the locations of other enemy players through a mobile application, and hunt them down mercilessly.", "Play Pac-Man in real life across five square blocks of Downtown Vancouver!"]}
+      />
+
+      <Project
+        image={buildABot}
+        classes={{
+          image: styles.buildABotImage,
+          text: styles.buildABotText,
+          container: styles.buildABotContainer,
+          title: styles.buildABotTitle
+        }}
+        projectName="Build-a-Bot Royale"
+        description={["Imagine a robot themed battle royale game with some Kahoot-esque elements.", "Join from your web browser, build your robot, and be the last bot standing in a Battle Royale of up to 100+ players."]}
+      />
+
+      <Project
+        image={mealMovers}
+        classes={{
+          image: styles.mealMoversImage,
+          text: styles.mealMoversText,
+          container: styles.mealMoversContainer,
+          title: styles.mealMoversTitle
+        }}
+        projectName="Meal Movers"
+        description={["A mobile app that helps connect food banks and shelters with food suppliers to streamline food donation processes. It aims to support those in need and reduce our food waste."]}
+      />
+
+      <Project
+        image={stormArea52}
+        classes={{
+          image: styles.stormArea52Image,
+          text: styles.stormArea52Text,
+          container: styles.stormArea52Container
+        }}
+        projectName="Storm Area 52"
+        description={["A simple and powerful way to organize meetings. A link is shared to all relevant people to poll for their availability and from there, the organizer can determine the optimal time for a meeting."]}
+      />
+
+      <Project
+        image={sfuCarpool}
+        classes={{
+          image: styles.sfuCarpoolImage,
+          text: styles.sfuCarpoolText,
+          container: styles.sfuCarpoolContainer,
+          title: styles.sfuCarpoolTitle,
+          description: styles.sfuCarpoolDisc
+        }}
+        projectName="SFU Carpool"
+        description={["Make new friends, beat the bus, save the environment all by simply entering the number of seats you have available in your car as a driver and by selecting your pick up location and university campus as a passenger."]}
       />
 
     </>
