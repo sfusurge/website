@@ -6,6 +6,7 @@
   background-color: var(--color-btnPrimary);
   font-family: var(--color-main);
   font-weight: 600;
+  font-size: 20px;
   color: #FFFFFF;
   text-decoration: none;
 }

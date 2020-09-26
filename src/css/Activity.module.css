@@ -1,7 +1,3 @@
-#container {
-  display: relative;
-}
-
 .squareBackground {
   width: 90%;
   height: calc(65vw);
@@ -9,18 +5,15 @@
 }
 
 .image {
-  display: absolute;
-  top: 10px;
-  left: 50px;
-  width: 70%;
-  /* transform: translate(20%, -105%); */
+  width: 90%;
 }
 
 .text {
-  position: absolute;
-  width: 85%;
+  /* width: 90%; */
   text-align: left;
   color: var(--color-main);
+  margin-top: -10px;
+  margin-bottom: 45px;
 }
 
 #textTitle {

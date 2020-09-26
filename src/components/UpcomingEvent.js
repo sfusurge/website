@@ -31,7 +31,7 @@ export default props => {
           <img src={clock} alt="Time" />
           <p>{props.time}</p>
         </div>
-        <a className={styles.fbEvent} href={props.link}>{props.title}</a>
+        <a className={styles.fbEvent} href={props.fbLink}>{props.title}</a>
       </div>
     </div>
   )

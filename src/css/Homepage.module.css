@@ -18,3 +18,20 @@
   align-self: center;
   width: 80%;
 }
+
+.spotlight {
+  margin: -30px auto 10px auto;
+  width: 80%;
+}
+
+.stream {
+  font-size: 16px;
+  color: var(--color-btnSecondary)
+}
+
+.upcomingEvents {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--color-main);
+  text-align: center;
+}
