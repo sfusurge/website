@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 import Homepage from "./pages/Homepage"
 import Projects from "./pages/Projects"
+import About from './pages/About'
 import Button from "./components/Button"
 import Nav from "./components/Nav"
 import Footer from "./components/Footer"
@@ -24,9 +25,9 @@ function App() {
           {/* <Route path="/events">
             <Events />
           </Route> */}
-          {/* <Route path="/about">
+          <Route path="/about">
             <About />
-          </Route> */}
+          </Route>
           <Route path="/">
             <Homepage />
           </Route>
