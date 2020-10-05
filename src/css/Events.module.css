@@ -13,13 +13,21 @@
 }
 
 #filter{
-  margin: 50px;
-  width: 150px;
-  padding: 5px 35px 5px 5px;
+  margin: 10px 0 33px 9% ;
+  width: 100px;
+  padding-right: 5px;
   font-size: 16px;
-  border: 1px solid #CCC;
+  border: none;
   height: 34px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: url("../icons/drop-down-arrow.svg") no-repeat right;
+  color: var(--color-main);
+  font-weight: 600;
+  font-family: "Barlow"
+}
+
+#filter:focus {
+  outline: none;
 }
