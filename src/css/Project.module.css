@@ -1,0 +1,29 @@
+.container{
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 115px;
+}
+
+.image{
+  margin: auto;
+}
+
+.text{
+  margin-left: 12%;
+  clear: both;
+}
+
+.name{
+  font-size: var(--fontSize-mobile-subHeading);
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.description{
+  font-size: var(--fontSize-mobile-body);
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
