@@ -1,0 +1,47 @@
+.wrapper {
+  height: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.backgroundContainer {
+  background-image: url(../assets/frontpage-background.svg);
+  background-size: cover;
+  height: 475px;
+}
+
+.logo {
+  margin-top: 50px;
+}
+
+.headerText {
+  color: var(--color-main);
+  justify-content: center;
+  text-align: center;
+}
+
+.mandate {
+  font-size: var(--fontSize-mobile-subHeading);
+  font-weight: 600;
+}
+
+.mission {
+  width: 78%;
+  margin: auto;
+  text-align: left;
+  font-size: 16px;
+}
+
+.btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rocketMonitor {
+  width: 80%;
+  margin-top: -30%;
+}

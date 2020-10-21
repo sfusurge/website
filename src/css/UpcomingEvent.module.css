@@ -38,7 +38,8 @@
 
 .title {
   width: 60%;
-  font-size: 30px;
+  color: #ffffff;
+  font-size: var(--fontSize-mobile-heading);
   font-weight: 800;
   margin: 0;
 }
