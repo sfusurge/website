@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 import Homepage from "./pages/Homepage"
+import Projects from "./pages/Projects"
 import About from './pages/About'
 // import Events from "./pages/Events"
 
@@ -20,9 +21,9 @@ function App() {
     <div id="app">
       <Router>
         <Switch>
-          {/* <Route path="/projects">
+          <Route path="/projects">
             <Projects />
-          </Route> */}
+          </Route>
           {/* <Route path="/events">
             <Events />
           </Route> */}
