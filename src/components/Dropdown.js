@@ -8,7 +8,7 @@ import { ReactComponent as DropDownArrow } from '../icons/drop-down.svg'
 // Options: ["Option1", "Option2", ...]
 export default ({
   options,
-  defualt,
+  defaultOption,
   classes: {
     optionStyles = "",
     listStyles = "",
@@ -21,7 +21,7 @@ export default ({
   onClick = () => { } }) => {
 
   const [isOpen, setOpen] = useState(false)
-  const [selected, setSelected] = useState(defualt || options[0])
+  const [selected, setSelected] = useState(defaultOption || options[0])
 
   const onClickHandler = (event, option) => {
     setSelected(option)
