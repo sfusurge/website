@@ -1,4 +1,6 @@
 :root{
+  --font: "Barlow";
+
   --fontSize-desktop-heading: 64px;
   --fontSize-desktop-subHeading: 50px;
   --fontSize-desktop-subSubHeading: 30px;
@@ -17,7 +19,11 @@
 }
 
 #app{
-  font-family: "Barlow";
+  font-family: var(--font);
   background-color: var(--color-background);
   overflow-x: hidden;
+}
+
+button {
+  font-family: var(--font);
 }

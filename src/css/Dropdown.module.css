@@ -1,0 +1,40 @@
+.container {
+  width: fit-content;
+}
+
+.btn, .option {
+  color: var(--color-main);
+  font-weight: 600;
+  font-size: var(--fontSize-mobile-body);
+}
+
+.btn {
+  border: none;
+  padding: 3px 10px 4px 4px;
+  background: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.dropDownArrow {
+  padding-left: 4px;
+}
+
+.list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  z-index: 1;
+}
+
+.option {
+  padding: 3px 10px 4px 4px;
+  background-color: white;
+}
+
+.selected {
+  background-color: var(--color-accent);
+}
