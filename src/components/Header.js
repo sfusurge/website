@@ -19,12 +19,24 @@ export default props => {
           <Button
             text="Join the Movement"
             // link="/mailchimp"
-            style={{ width: "40%", height: "35px", fontSize: "12px", backgroundColor: "var(--color-btnPrimary)", margin: "0" }}
+            style={{
+              width: "40%",
+              height: "35px",
+              fontSize: "12px",
+              backgroundColor: "var(--color-btnPrimary)",
+              margin: "0"
+            }}
           />
           <Button
             text="Learn More"
             // link="/about"
-            style={{ width: "40%", height: "35px", fontSize: "12px", backgroundColor: "var(--color-btnSecondary", margin: "0" }}
+            style={{
+              width: "40%",
+              height: "35px",
+              fontSize: "12px",
+              backgroundColor: "var(--color-btnSecondary)",
+              margin: "0"
+            }}
           />
         </div>
       </div>
