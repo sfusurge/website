@@ -1,0 +1,186 @@
+#splash{
+  width: 100%;
+}
+
+#description{
+  width: 72%;
+  margin: 49px auto 25px auto;
+  color: var(--color-main);
+  font-size: var(--fontSize-mobile-body);
+}
+
+#description p b{
+  font-weight: 600;
+}
+
+#timer{
+  color: var(--color-main);
+  margin: 0 auto 24px auto;
+  font-size: 36px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+#pastProjects{
+  color: var(--color-main);
+  margin: 0 auto 110px auto;
+  width: fit-content;
+  font-weight: 600;
+}
+
+
+/* Pac Macro */
+
+#pacmacroImage{
+  transform: translateY(-55px);
+  float: right;
+  margin-right: 7%;
+}
+
+#pacmacroText{
+  transform: translateY(-45px);
+  width: 217px;
+}
+
+#pacmacroContainer{
+  background-image: url("../assets/projects/pac-macro-background.png");
+  background-position: 25% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 432px;
+}
+
+
+/* Schedule Me */
+
+#scheduleMeImage{
+  transform: translateY(-90px);
+  width: 262px;
+  float: right;
+  margin-right: 6%;
+}
+
+#scheduleMeText{
+  transform: translateY(-10px);
+  width: 244px;
+}
+
+#scheduleMeContainer{
+  background-image: url("../assets/projects/schedule-me-background.png");
+  background-position: 78% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 364px;
+}
+
+
+/* Build a Bot */
+
+#buildABotImage{
+  transform: translateY(-98px);
+  width: 288px;
+  float: right;
+  margin-right: 6%;
+}
+
+#buildABotText{
+  transform: translateY(-35px);
+  width: 281px;
+  margin-left: 4%;
+}
+
+#buildABotTitle{
+  font-size: var(--fontSize-mobile-heading);
+}
+
+#buildABotContainer{
+  background-image: url("../assets/projects/build-a-bot-background.png");
+  background-position: 37% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 377px;
+  margin-top: 155px;
+}
+
+
+/* Meal Movers */
+
+#mealMoversImage{
+  transform: translate(15px, -90px);
+  width: 165px;
+  float: right;
+}
+
+#mealMoversText{
+  transform: translateY(-100px);
+  width: 254px;
+  margin-left: 4%;
+}
+
+#mealMoversTitle{
+  font-size: var(--fontSize-mobile-heading);
+}
+
+#mealMoversContainer{
+  background-image: url("../assets/projects/meal-movers-background.png");
+  background-position: 78% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 364px;
+}
+
+
+/* Storm Area 52 */
+
+#stormArea52Image{
+  transform: translateY(-45px);
+  width: 288px;
+  float: right;
+  margin-right: 6%;
+}
+
+#stormArea52Text{
+  transform: translateY(2px);
+  width: 211px;
+  margin-left: 9%;
+}
+
+#stormArea52Container{
+  background-image: url("../assets/projects/storm-area-52-background.png");
+  background-position: 87% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 364px;
+}
+
+
+/* SFU Carpool */
+
+#sfuCarpoolImage{
+  transform: translate(55px, -65px);
+  width: 158px;
+  float: right;
+  margin-right: 6%;
+}
+
+#sfuCarpoolText{
+  transform: translateY(-100px);
+  margin-left: 11.5%;
+  width: 266px;
+}
+
+#sfuCarpoolTitle{
+  font-size: var(--fontSize-mobile-heading);
+}
+
+#sfuCarpoolDisc{
+  font-size: var(--fontSize-mobile-subHeading);
+}
+
+#sfuCarpoolContainer{
+  background-image: url("../assets/projects/sfu-carpool-background.png");
+  background-repeat: no-repeat;
+  background-position: 87% 0;
+  background-size: cover;
+  height: 423px;
+}
