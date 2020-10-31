@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { events, EventCategory } from "../data/data"
+import { events, EventCategories } from "../data/data"
 
 import styles from "../css/Events.module.css"
 
@@ -9,6 +9,12 @@ import Splash from "../components/Splash"
 import splash from "../assets/events-splash.svg"
 
 export default props => {
+  const [category, setCategory] = useState(EventCategories.all)
+
+  const onFilter = category => {
+    setCategory(category)
+  }
+
   return (
     <>
       <Splash src={splash} alt="Events" />
@@ -18,24 +24,27 @@ export default props => {
       <h1 id={styles.header}>Upcoming Events</h1>
 
       <select id={styles.filter}>
-        <option value={EventCategory.All}>All Events</option>
-        <option value={EventCategory.Workshops}>Workshops</option>
-        <option value={EventCategory.TechTalks}>TechTalks</option>
-        <option value={EventCategory.Socials}>Socials</option>
+        <option value={EventCategories.all}>All Events</option>
+        <option value={EventCategories.workshops}>Workshops</option>
+        <option value={EventCategories.techTalks}>TechTalks</option>
+        <option value={EventCategories.socials}>Socials</option>
       </select>
 
-      {events.map(event =>
-        <Event
-          date={event.date}
-          month={event.month}
-          title={event.title}
-          location={{
-            title: event.location.title,
-            link: event.location.link
-          }}
-          time={event.time}
-          link={event.link}
-        />)}
+      {events.map(event => {
+        return (category === EventCategories.all || category === event.category) &&
+          <Event
+            date={event.date}
+            month={event.month}
+            title={event.title}
+            location={{
+              title: event.location.title,
+              link: event.location.link
+            }}
+            time={event.time}
+            link={event.link}
+            key={event.title}
+          />
+      })}
     </>
   )
 }
