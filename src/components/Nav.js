@@ -14,13 +14,8 @@ export default ({ scrollLock }) => {
   const [nav, toggleNav] = useState(false)
 
   function handleClick(event) {
-    if (this.close) {
-      toggleNav(false)
-      scrollLock(true)
-    } else {
-      toggleNav(true)
-      scrollLock(false)
-    }
+    toggleNav(!this.close)
+    scrollLock(this.close)
   }
 
   return (
@@ -28,7 +23,7 @@ export default ({ scrollLock }) => {
       <button
         id={styles.openBtn}
         className={styles.btn}
-        onClick={handleClick.bind({ close: false })}
+        onClick={handleClick.bind({ close: nav })}
         style={{ visibility: !nav }}
       >
         <img id={styles.openImg} src={menu} alt="Open naigation panel" />
@@ -42,10 +37,10 @@ export default ({ scrollLock }) => {
             <img src={closeButton} id={styles.closeImg} alt="Exit navigation panel" />
           </button>
         </div>
-        <Link className={styles.routes} to="/">Home</Link>
-        <Link className={styles.routes} to="/about">About</Link>
-        <Link className={styles.routes} to="/projects">Projects</Link>
-        <Link className={styles.routes} to="/events">Events</Link>
+        <Link className={styles.routes} onClick={handleClick.bind({ close: true })} to="/">Home</Link>
+        <Link className={styles.routes} onClick={handleClick.bind({ close: true })} to="/about">About</Link>
+        <Link className={styles.routes} onClick={handleClick.bind({ close: true })} to="/projects">Projects</Link>
+        <Link className={styles.routes} onClick={handleClick.bind({ close: true })} to="/events">Events</Link>
         <div id={styles.footer}>
           <a href="https://www.facebook.com/sfusurge" className={styles.iconLink}>
             <img className={styles.icon} src={facebook} alt="Facebook Page" />
