@@ -1,5 +1,8 @@
 #nav{
-  position: relative;
+  position: absolute;
+  z-index: 999;
+  width: 75%;
+  right: 0;
 }
 
 #openBtn {
@@ -16,12 +19,9 @@
 #container{
   display: flex;
   flex-direction: column;
-  width: 75%;
-  float: right;
   background-color: white;
   height: 100vh;
   overflow-y: hidden;
-  position: relative;
   transition: transform 300ms ease-out;
 }
 

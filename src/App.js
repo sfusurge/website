@@ -8,7 +8,7 @@ import About from './pages/About'
 
 import Button from "./components/Button"
 import Nav from "./components/Nav"
-import Footer from "./components/Footer"
+// import Footer from "./components/Footer"
 
 import './App.css';
 
@@ -18,8 +18,9 @@ function App() {
   const [scroll, scrollLock] = useState(true)
 
   return (
-    <div id="app">
+    <div id="app" style={!scroll ? { overflowY: "hidden", height: "100vh" } : {}}>
       <Router>
+        <Nav scrollLock={scrollLock} />
         <Switch>
           <Route path="/projects">
             <Projects />
