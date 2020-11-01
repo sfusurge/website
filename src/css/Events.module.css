@@ -1,0 +1,24 @@
+#container{
+  margin: 0 auto;
+}
+
+#text{
+  color: var(--color-main);
+  width: 77%;
+  font-size: var(--fontSize-mobile-body);
+  line-height: 20px;
+  margin: 30px auto 50px auto;
+}
+
+#header{
+  color: var(--color-main);
+  font-size: var(--fontSize-mobile-heading);
+  width: 79%;
+  font-weight: 600;
+  margin: 10px auto;
+}
+
+.dropdown{
+  margin-bottom: 33px;
+  margin-left: 9.5%;
+}
