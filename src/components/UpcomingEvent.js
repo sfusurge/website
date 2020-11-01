@@ -2,8 +2,6 @@ import React from "react"
 
 import styles from "../css/UpcomingEvent.module.css"
 
-import {ReactComponent as BgBody} from "../assets/event-card-body.svg"
-import {ReactComponent as BgEdge} from "../assets/event-card-edge.svg"
 import mapMarker from "../icons/map-marker.svg"
 import clock from "../icons/time.svg"
 
@@ -11,12 +9,15 @@ export default props => {
   return (
     <div id={styles.container}>
       <div className={styles.background}>
-        {/* <BgBody className={styles.backgroundBody} /> */}
-        <svg width="260" height="275" viewBox="0 0 260 275" fill="none" preserveAspectRatio="none" className={styles.backgroundBody}>
-          <rect width="260" height="7.09677" fill="#2B5699" core="true" />
-          <rect y="7" width="260" height="268" fill="#3D73C7" core="false" />
+        <svg className={styles.backgroundBody} width="260" height="275" viewBox="0 0 260 275" fill="none" preserveAspectRatio="none">
+          <rect fill={props.fill?.accent || "#2B5699"} width="260" height="7.09677" />
+          <rect fill={props.fill?.body || "#3D73C7"} y="7" width="260" height="268" />
         </svg>
-        <BgEdge className={styles.backgroundEdge} />
+        <svg className={styles.backgroundEdge} width="47" height="275" viewBox="0 0 47 275" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill={props.fill?.body || "#3D73C7"} d="M0 7H46L46.5 241L0 275V7Z" />
+          <path fill={props.fill?.accent || "#2B5699"} d="M46.4516 241L0 275C1.99307 266.118 2.506 261.361 0 250.355C18.8197 250.943 28.9012 248.339 46.4516 241Z" />
+          <rect fill={props.fill?.accent || "#2B5699"} width="46" height="7" />
+        </svg>
       </div>
       <div className={styles.header}>
         <div className={styles.date}>
