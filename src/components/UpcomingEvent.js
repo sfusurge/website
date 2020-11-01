@@ -2,8 +2,8 @@ import React from "react"
 
 import styles from "../css/UpcomingEvent.module.css"
 
-import backgroundBodySrc from "../assets/event-card-body.svg"
-import backgroundEdgeSrc from "../assets/event-card-edge.svg"
+import {ReactComponent as BgBody} from "../assets/event-card-body.svg"
+import {ReactComponent as BgEdge} from "../assets/event-card-edge.svg"
 import mapMarker from "../icons/map-marker.svg"
 import clock from "../icons/time.svg"
 
@@ -11,8 +11,12 @@ export default props => {
   return (
     <div id={styles.container}>
       <div className={styles.background}>
-        <img src={backgroundBodySrc} className={styles.backgroundBody} alt="" />
-        <img src={backgroundEdgeSrc} className={styles.backgroundEdge} alt="" />
+        {/* <BgBody className={styles.backgroundBody} /> */}
+        <svg width="260" height="275" viewBox="0 0 260 275" fill="none" preserveAspectRatio="none" className={styles.backgroundBody}>
+          <rect width="260" height="7.09677" fill="#2B5699" core="true" />
+          <rect y="7" width="260" height="268" fill="#3D73C7" core="false" />
+        </svg>
+        <BgEdge className={styles.backgroundEdge} />
       </div>
       <div className={styles.header}>
         <div className={styles.date}>

@@ -5,6 +5,7 @@ import styles from "../css/Events.module.css"
 
 import Event from "../components/UpcomingEvent"
 import Splash from "../components/Splash"
+import Dropdown from "../components/Dropdown"
 
 import splash from "../assets/events-splash.svg"
 
@@ -18,19 +19,12 @@ export default props => {
   return (
     <>
       <Splash src={splash} alt="Events" />
-
       <p id={styles.text}>Events are a core component of our semesterly activities.  On a regular basis, we host talks, workshops, socials, and more. Together, we also tend to do a lot of Leetcode problems. Scroll down below to see what events we have coming up. We hope to see you there!</p>
-
       <h1 id={styles.header}>Upcoming Events</h1>
 
-      <select id={styles.filter}>
-        <option value={EventCategories.all}>All Events</option>
-        <option value={EventCategories.workshops}>Workshops</option>
-        <option value={EventCategories.techTalks}>TechTalks</option>
-        <option value={EventCategories.socials}>Socials</option>
-      </select>
+      <Dropdown options={Object.values(EventCategories)} onClick={onFilter} classes={{dropdownStyles: styles.dropdown}} />
 
-      {events.map(event => {
+      {events.map((event, index) => {
         return (category === EventCategories.all || category === event.category) &&
           <Event
             date={event.date}
@@ -42,7 +36,7 @@ export default props => {
             }}
             time={event.time}
             link={event.link}
-            key={event.title}
+            key={event.title + index}
           />
       })}
     </>

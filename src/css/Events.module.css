@@ -1,3 +1,7 @@
+#container{
+  margin: 0 auto;
+}
+
 #text{
   color: var(--color-main);
   width: 77%;
@@ -8,11 +12,18 @@
 
 #header{
   color: var(--color-main);
-  width: 82%;
-  margin: auto;
+  font-size: var(--fontSize-mobile-heading);
+  width: 79%;
+  font-weight: 600;
+  margin: 10px auto;
 }
 
-#filter{
+.dropdown{
+  margin-bottom: 33px;
+  margin-left: 9.5%;
+}
+
+/* #filter{
   margin: 10px 0 33px 9% ;
   width: 100px;
   padding-right: 5px;
@@ -30,4 +41,4 @@
 
 #filter:focus {
   outline: none;
-}
+} */

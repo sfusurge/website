@@ -1,13 +1,11 @@
 const EventCategories = {
+  all: "All Events",
   workshops: "Workshops",
   techTalks: "TechTalks",
   socials: "Socials",
-  all: "All Events"
 }
 
-export { EventCategories }
-
-export const events = [
+const events = [
   {
     date: 22,
     month: "NOV",
@@ -21,7 +19,7 @@ export const events = [
       title: "Facebook Event",
       link: ""
     },
-    category: EventCategories.Workshops
+    category: EventCategories.workshops
   },
   {
     date: 22,
@@ -36,7 +34,7 @@ export const events = [
       title: "Facebook Event",
       link: ""
     },
-    category: EventCategories.Workshops
+    category: EventCategories.workshops
   },
   {
     date: 22,
@@ -51,7 +49,7 @@ export const events = [
       title: "Facebook Event",
       link: ""
     },
-    category: EventCategories.Workshops
+    category: EventCategories.workshops
   },
   {
     date: 22,
@@ -66,6 +64,11 @@ export const events = [
       title: "Facebook Event",
       link: ""
     },
-    category: EventCategories.Workshops
+    category: EventCategories.workshops
   },
 ]
+
+export { 
+  EventCategories,
+  events
+}
